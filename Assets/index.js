@@ -1,5 +1,5 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer');
+const inquirer = require ('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
@@ -115,7 +115,7 @@ const questions =
  //What License is user using?
     {
         type: 'list',
-        name: 'License',
+        name: 'chooseLicenseBox',
         message: 'Please choose a license for your project.',
         choices: ['GNU', 'MIT', 'Bitbucket', 'IBM', 'Boost', 'Open-Source'],
         validate: chooseLicenseBox => {

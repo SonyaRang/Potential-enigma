@@ -59,7 +59,7 @@ else if (chooseLicenseBox === 'IBM') {
 }
 
 //Boost Badge
- else if (chooseLicenseBox === 'Boost') {
+else if (chooseLicenseBox === 'Boost') {
   return `[![License: Boost](https://www.boost.org/LICENSE_1_0.txt)`;
 }
 
@@ -83,13 +83,11 @@ function generateMarkdown(data) {
   # Table of Contents
   - [Installation](#installation)
   - [License](#license)
-  - [Badges](#badges)
-  # Installation
-  ${data.projectInstall}
+  ${data.projectName}
   # License
   ${renderLicenseLink(data.chooseLicenseBox)}
   # Badge
- ${renderLicenseBadge(data.chooseLicenseBox)}
+${renderLicenseBadge(data.chooseLicenseBox)}
 
 `;
 }
